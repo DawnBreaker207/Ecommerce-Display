@@ -25,6 +25,20 @@ html {
   font-family: "Roboto", sans-serif;
 }
 
+.btn {
+  margin: 12px;
+  padding: 18px 30px;
+  color: black;
+  background-color: transparent;
+  transition: all ease-in-out 0.3s;
+  border-radius: 60px;
+  min-width: 40px;
+}
+.btn:hover {
+  color: transparent;
+  background-color: black;
+}
+
 .flex-sb {
   display: flex;
   justify-content: space-between;
@@ -65,20 +79,40 @@ header nav ul li {
 }
 header nav ul li a {
   padding: 12px;
+  color: black;
 }
-
-.btn {
-  margin: 12px;
-  padding: 24px;
+header h1 {
+  font-size: 78px;
+}
+header h1 span > img {
+  width: 174px;
+}
+header .btn-login {
+  border: none;
+  padding: 10px 15px;
+  transition: all ease-in-out 0.3s;
+  border-radius: 15px;
   color: black;
   background-color: transparent;
-  transition: all ease-in-out 0.3s;
-  border-radius: 50%;
-  min-width: 40px;
 }
-.btn:hover {
-  color: transparent;
+header .btn-login:hover {
+  color: white;
   background-color: black;
+}
+header .btn-book {
+  color: white;
+  background-color: black;
+}
+header .btn-book:hover {
+  border: 1px solid black;
+  color: black;
+  background-color: transparent;
+}
+header .btn-demo {
+  background-color: #f7d047;
+}
+header .btn-quest {
+  border: 1px solid black;
 }
 
 main {
@@ -93,6 +127,7 @@ main .title {
 }
 main .sub-title {
   font-size: 24px;
+  text-align: center;
 }
 main section {
   padding: 140px 0 0 0;
@@ -102,10 +137,88 @@ main #sale .content {
 }
 main #sale .content img {
   width: 170px;
-  height: auto;
+  height: 154px;
   display: block;
   margin: 0 auto;
 }
 main #how .content {
   padding: 24px;
+}
+main #benefits .item {
+  padding: 0 40px;
+}
+main #benefits .item .thumb {
+  display: inline-block;
+  padding: 11px;
+  border-radius: 10px;
+  max-height: auto;
+  width: auto;
+  background: #039eb3;
+}
+main #benefits .item .thumb img {
+  width: auto;
+  height: auto;
+}
+main #benefits .item .title {
+  text-align: left;
+}
+main #benefits .item .title h5 {
+  font-size: 20px;
+  font-weight: 600;
+}
+main #benefits .item .title p {
+  font-size: 1rem;
+}
+footer {
+  width: 100%;
+  background-color: #f2ede6;
+}
+footer .support {
+  padding: 130px 0 150px;
+  text-align: center;
+}
+footer .support h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+footer .try {
+  background-color: #018294;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 100px;
+  border-radius: 30px;
+}
+footer .try .title {
+  color: white;
+}
+footer .try .title h1 {
+  font-size: 38px;
+}
+footer .try .title button {
+  background-color: #f7d047;
+  font-weight: 600;
+}
+footer .try .title ol > li {
+  list-style-image: url("/assets/imgs/Group 340.svg");
+}
+footer .contact {
+  padding: 50px 0 86px;
+}
+footer .contact .logo {
+  height: 42px;
+}
+footer .contact .logo img {
+  width: 100%;
+  height: 100%;
+}
+footer .contact .pages ul {
+  display: flex;
+  flex-direction: row;
+  gap: 44px;
+  color: #676562;
+}
+footer .contact .social {
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
 }/*# sourceMappingURL=style.css.map */

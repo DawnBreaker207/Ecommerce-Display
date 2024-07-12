@@ -1,6 +1,6 @@
 $primaryColor: #018294;
 $secondColor: #f2ede6;
-
+$thirdColor: #f2ede6;
 * {
   padding: 0;
   margin: 0;
@@ -24,6 +24,19 @@ html {
   font-family: 'Roboto', sans-serif;
 }
 body {
+}
+.btn {
+  margin: 12px;
+  padding: 18px 30px;
+  color: black;
+  background-color: transparent;
+  transition: all ease-in-out 0.3s;
+  border-radius: 60px;
+  min-width: 40px;
+  &:hover {
+    color: transparent;
+    background-color: black;
+  }
 }
 
 .flex-sb {
@@ -62,24 +75,47 @@ header {
       margin-right: 12px;
       a {
         padding: 12px;
+        color: black;
       }
     }
   }
-}
+  h1 {
+    font-size: 78px;
+    span > img {
+      width: 174px;
+    }
+  }
 
-.btn {
-  margin: 12px;
-  padding: 24px;
-  color: black;
-  background-color: transparent;
-  transition: all ease-in-out 0.3s;
-  border-radius: 50%;
-  min-width: 40px;
-  &:hover {
-    color: transparent;
+  .btn-login {
+    border: none;
+    padding: 10px 15px;
+    transition: all ease-in-out 0.3s;
+    border-radius: 15px;
+    color: black;
+    background-color: transparent;
+    &:hover {
+      color: white;
+      background-color: black;
+    }
+  }
+  .btn-book {
+    color: white;
     background-color: black;
+    &:hover {
+      border: 1px solid black;
+      color: black;
+      background-color: transparent;
+    }
+  }
+
+  .btn-demo {
+    background-color: #f7d047;
+  }
+  .btn-quest {
+    border: 1px solid black;
   }
 }
+
 main {
   background: $primaryColor;
   color: #fff;
@@ -91,6 +127,7 @@ main {
   }
   .sub-title {
     font-size: 24px;
+    text-align: center;
   }
   section {
     padding: 140px 0 0 0;
@@ -100,7 +137,7 @@ main {
       text-align: center;
       img {
         width: 170px;
-        height: auto;
+        height: 154px;
         display: block;
         margin: 0 auto;
       }
@@ -112,7 +149,89 @@ main {
     }
   }
   #benefits {
+    .item {
+      padding: 0 40px;
+      .thumb {
+        display: inline-block;
+        padding: 11px;
+        border-radius: 10px;
+        max-height: auto;
+        width: auto;
+        background: #039eb3;
+        img {
+          width: auto;
+          height: auto;
+        }
+      }
+      .title {
+        text-align: left;
+        h5 {
+          font-size: 20px;
+          font-weight: 600;
+        }
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
   }
   #pricing {
+  }
+}
+footer {
+  width: 100%;
+  background-color: $thirdColor;
+  .support {
+    padding: 130px 0 150px;
+    text-align: center;
+    h1 {
+      font-size: 3rem;
+      font-weight: 600;
+    }
+    .brand {
+    }
+  }
+  .try {
+    background-color: $primaryColor;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 100px;
+    border-radius: 30px;
+    .title {
+      color: white;
+      h1 {
+        font-size: 38px;
+      }
+      button {
+        background-color: #f7d047;
+        font-weight: 600;
+      }
+      ol > li {
+        list-style-image: url('/assets/imgs/Group\ 340.svg');
+      }
+    }
+  }
+  .contact {
+    padding: 50px 0 86px;
+    .logo {
+      height: 42px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .pages {
+      ul {
+        display: flex;
+        flex-direction: row;
+        gap: 44px;
+        color: #676562;
+      }
+    }
+    .social {
+      display: flex;
+      flex-direction: row;
+      gap: 18px;
+    }
   }
 }

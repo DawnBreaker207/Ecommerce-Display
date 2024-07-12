@@ -3,20 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="/assets/scss/style.css" />
     <title>E-commerce</title>
   </head>
   <body>
     <header>
-      <div class="container">
-        <div class="header-inner">
-          <div class="header-left flex-end">
+      <div class="container mx-auto sm:px-4">
+        <div class="header-inner flex justify-between items-center">
+          <div class="header-left flex-start">
             <div class="logo">
               <a href=""
                 ><img src="./assets/imgs/Logo.png" alt="Company name" />
@@ -33,132 +28,348 @@
             </nav>
           </div>
           <div class="header-right">
-            <button>Login</button>
-            <button class="btn">Book a demo</button>
+            <button class="btn-login">Login</button>
+            <button class="btn btn-book">Book a demo</button>
           </div>
         </div>
-        <div class="row">
-          <div class="col-6">
-            <h1>Online catalog management tool</h1>
+        <div class="flex flex-wrap">
+          <div class="w-1/2">
+            <h1>
+              Online catalog management
+              <span><img src="/assets/imgs/Rectangle 22.png" alt="" /></span>
+              tool
+            </h1>
             <p>
               Skyrocket your online store conversion rate the customer
               experience with visual merchandising.
             </p>
             <div class="wrap-btn">
-              <button>Book a demo</button>
-              <button>Add a question</button>
+              <button class="btn btn-demo">Book a demo</button>
+              <button class="btn btn-quest">Add a question</button>
             </div>
           </div>
-          <div class="col-6">
+          <div class="w-1/2">
             <img src="assets/imgs/Dashboard.png" alt="" />
           </div>
         </div>
       </div>
     </header>
     <main>
-      <div class="container">
+      <div class="container mx-auto sm:px-4">
         <section id="sale">
           <h2 class="title">Merchandising to increase sales.</h2>
           <div class="content">
-            <div class="row gx-6">
-              <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+            <div class="flex flex-wrap gx-6">
+              <div class="w-full sm:w-full md:w-1/3 lg:w-1/3 pr-4 pl-4">
                 <img src="/assets/imgs/Icon.png" alt="" />
-                <h3>Lorem ipsum dolor sit.</h3>
+                <h3>Conversion rate skyrockets.</h3>
                 <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum
-                  eos veniam, ea porro ad alias.
+                  Convert more online sales with our visual merchandising
+                  interface.
                 </p>
               </div>
-              <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+              <div class="w-full sm:w-full md:w-1/3 lg:w-1/3 pr-4 pl-4">
                 <img src="/assets/imgs/Icon-2.png" alt="" />
-                <h3>Lorem ipsum dolor sit.</h3>
+                <h3>Increase average order value</h3>
                 <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum
-                  eos veniam, ea porro ad alias.
+                  Increase average order value of your online store by 17% with
+                  this little trick.
                 </p>
               </div>
-              <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+              <div class="w-full sm:w-full md:w-1/3 lg:w-1/3 pr-4 pl-4">
                 <img src="/assets/imgs/Icon-3.png" alt="" />
-                <h3>Lorem ipsum dolor sit.</h3>
+                <h3>Spend less time for management</h3>
                 <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum
-                  eos veniam, ea porro ad alias.
+                  Let your employees spend less time managing the online selling
+                  it.
                 </p>
               </div>
             </div>
           </div>
         </section>
         <section id="how">
-          <h2 class="title">How it works</h2>
+          <h2 class="title">How Smaller works</h2>
           <h3 class="sub-title">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam,
-            facilis.
+            Smaller is a cloud-based tool for merchandisers and eCommerce
+            professionals.
           </h3>
-          <div class="row">
-            <div class="col-12 col-md-6">
+          <div class="flex flex-wrap">
+            <div class="w-full md:w-1/2 pr-4 pl-4">
               <img src="/assets/imgs/Card.png" alt="" />
             </div>
-            <div class="col-12 col-md-6">
+            <div class="w-full md:w-1/2 pr-4 pl-4">
               <div class="content">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Pariatur magnam beatae asperiores consectetur, numquam veniam.
+                <h5>Set basic sorting rules <br />for any categories</h5>
+                <p>
+                  Bulk sort products on any category page you need, combine
+                  different sort rules:
+                </p>
+                <hr />
+                <ul>
+                  <li>Newest</li>
+                  <li>Bestseller</li>
+                  <li>Most reviewable</li>
+                  <li>Price</li>
+                  <li>Custom Attribute</li>
+                </ul>
               </div>
             </div>
           </div>
-          <div class="row flex-row-reverse">
-            <div class="col-12 col-md-6">
+          <div class="flex flex-wrap flex-row-reverse">
+            <div class="w-full md:w-1/2 pr-4 pl-4">
               <img src="/assets/imgs/Card.png" alt="" />
             </div>
-            <div class="col-12 col-md-6">
+            <div class="w-full md:w-1/2 pr-4 pl-4">
               <div class="content">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Pariatur magnam beatae asperiores consectetur, numquam veniam.
+                <h5>Drag and Drop catalog management</h5>
+                <p>
+                  Use the Drag and Drop function to sort your products in the
+                  most intuitive, quickest way.
+                </p>
+                <p>
+                  Set scores for products by adding number, SKUs with higher
+                  scores will be displayed on top of the category pages.
+                </p>
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-12 col-md-6">
+          <div class="flex flex-wrap">
+            <div class="w-full md:w-1/2 pr-4 pl-4">
               <img src="/assets/imgs/Card.png" alt="" />
             </div>
-            <div class="col-12 col-md-6">
+            <div class="w-full md:w-1/2 pr-4 pl-4">
               <div class="content">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Pariatur magnam beatae asperiores consectetur, numquam veniam.
+                <h5>Limit and add product groups per category pages</h5>
+                <p>Achieve a certain variety on your catalog pages:</p>
+                \
+                <hr />
+                <ul>
+                  <li>
+                    Ensure the page does not contain identical products: same
+                    color, style or type.
+                  </li>
+                  <li>
+                    Hide and add the desired products or product groups on the
+                    category page.
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
-          <div class="row flex-row-reverse">
-            <div class="col-12 col-md-6">
+          <div class="flex flex-wrap flex-row-reverse">
+            <div class="w-full md:w-1/2 pr-4 pl-4">
               <img src="/assets/imgs/Card.png" alt="" />
             </div>
-            <div class="col-12 col-md-6">
+            <div class="w-full md:w-1/2 pr-4 pl-4">
               <div class="content">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Pariatur magnam beatae asperiores consectetur, numquam veniam.
+                <h5>Control poor-selling products</h5>
+                <p>
+                  Sortler provides flexible features for the management of your
+                  low-selling items.
+                </p>
+                <hr />
+                <ul>
+                  <li>Tracking low-selling items</li>
+                  <li>Raising the item position to the top.</li>
+                  <li>Applying discounts</li>
+                </ul>
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-12 col-md-6">
+          <div class="flex flex-wrap">
+            <div class="w-full md:w-1/2 pr-4 pl-4">
               <img src="/assets/imgs/Card.png" alt="" />
             </div>
-            <div class="col-12 col-md-6">
+            <div class="w-full md:w-1/2 pr-4 pl-4">
               <div class="content">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Pariatur magnam beatae asperiores consectetur, numquam veniam.
+                <h5>Create rules of low-stock and out-of-stock products</h5>
+                <p>
+                  Place low-stock items at the top of your product list. Move
+                  out-of-stock products down the catalog.
+                </p>
+                <hr />
+                <p>
+                  Place low-stock items at the top of your product list. Move
+                  out-of-stock products down the catalog.
+                </p>
+                <p>
+                  Create rules for applying discounts in your catalog. Simplify
+                  loyalty program management, thereby increasing sales.
+                </p>
               </div>
             </div>
           </div>
         </section>
-        <section id="benefits"></section>
-        <section id="pricing"></section>
+        <section id="benefits">
+          <div class="grid grid-cols-3">
+            <div class="item relative flex-grow max-w-full flex-1 px-4">
+              <div class="thumb">
+                <img src="/assets/imgs/Union (Stroke).svg" alt="" />
+              </div>
+              <div class="title">
+                <h5>Compatibility</h5>
+                <p>
+                  Sortler supports all popular eCommerce solutions, including
+                  Magento, Shopify, WooCommerce, BigCommerce.
+                </p>
+              </div>
+            </div>
+            <div class="item relative flex-grow max-w-full flex-1 px-4">
+              <div class="thumb">
+                <img src="/assets/imgs/Union (Stroke).svg" alt="" />
+              </div>
+              <div class="title">
+                <h5>Compatibility</h5>
+                <p>
+                  Sortler supports all popular eCommerce solutions, including
+                  Magento, Shopify, WooCommerce, BigCommerce.
+                </p>
+              </div>
+            </div>
+            <div class="item relative flex-grow max-w-full flex-1 px-4">
+              <div class="thumb">
+                <img src="/assets/imgs/Union (Stroke).svg" alt="" />
+              </div>
+              <div class="title">
+                <h5>Compatibility</h5>
+                <p>
+                  Sortler supports all popular eCommerce solutions, including
+                  Magento, Shopify, WooCommerce, BigCommerce.
+                </p>
+              </div>
+            </div>
+            <div class="item relative flex-grow max-w-full flex-1 px-4">
+              <div class="thumb">
+                <img src="/assets/imgs/Union (Stroke).svg" alt="" />
+              </div>
+              <div class="title">
+                <h5>Compatibility</h5>
+                <p>
+                  Sortler supports all popular eCommerce solutions, including
+                  Magento, Shopify, WooCommerce, BigCommerce.
+                </p>
+              </div>
+            </div>
+            <div class="item relative flex-grow max-w-full flex-1 px-4">
+              <div class="thumb">
+                <img src="/assets/imgs/Union (Stroke).svg" alt="" />
+              </div>
+              <div class="title">
+                <h5>Compatibility</h5>
+                <p>
+                  Sortler supports all popular eCommerce solutions, including
+                  Magento, Shopify, WooCommerce, BigCommerce.
+                </p>
+              </div>
+            </div>
+            <div class="item relative flex-grow max-w-full flex-1 px-4">
+              <div class="thumb">
+                <img src="/assets/imgs/Union (Stroke).svg" alt="" />
+              </div>
+              <div class="title">
+                <h5>Compatibility</h5>
+                <p>
+                  Sortler supports all popular eCommerce solutions, including
+                  Magento, Shopify, WooCommerce, BigCommerce.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="pricing">
+          <h2>Simple pricing</h2>
+          <p>No credit card required. Cancel any time.</p>
+        </section>
       </div>
     </main>
-    <footer><div class="container"></div></footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-      crossorigin="anonymous"
-    ></script>
+    <footer>
+      <div class="container mx-auto sm:px-4">
+        <div class="support">
+          <h1>All eCommerce CMS platforms supported</h1>
+          <p>
+            Magento 2, Shopify, WooCommerce, BigCommerce, Opencart and more.
+          </p>
+          <div class="brand flex-sb">
+            <div>
+              <img src="./assets/imgs/Frame.svg" alt="Magento 2" />
+            </div>
+            <div>
+              <img src="./assets/imgs/Frame.svg" alt="Shopify" />
+            </div>
+            <div>
+              <img src="./assets/imgs/Frame.svg" alt="WooCommerce" />
+            </div>
+            <div>
+              <img src="./assets/imgs/Frame.svg" alt=" BigCommerce" />
+            </div>
+            <div>
+              <img src="./assets/imgs/Frame.svg" alt="Opencart" />
+            </div>
+          </div>
+        </div>
+        <div class="try">
+          <div class="title">
+            <h1>Try Sortler For Free!</h1>
+            <button class="btn">Book a Demo</button>
+            <ol>
+              <li>NO Coding needed, Plug-&-Play</li>
+              <li>All eCommerce platforms supported</li>
+            </ol>
+          </div>
+          <div>
+            <img src="./assets/imgs/Vector.png" alt="" />
+          </div>
+        </div>
+        <div class="contact flex-sb">
+          <div class="logo">
+            <img src="/assets/imgs/Logo.png" alt="" />
+          </div>
+          <div class="pages">
+            <ul>
+              <li><a href="">Pricing</a></li>
+              <li><a href="">Company</a></li>
+              <li><a href="">Company</a></li>
+              <li><a href="">Contact us</a></li>
+            </ul>
+          </div>
+          <div class="social">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="black"
+                d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93zM6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="black"
+                d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 56 56"
+            >
+              <path
+                fill="black"
+                fill-rule="evenodd"
+                d="M39.006 3C46.735 3 53 9.27 53 16.994v22.012C53 46.735 46.73 53 39.006 53H16.994C9.265 53 3 46.73 3 39.006V16.994C3 9.265 9.27 3 16.994 3zM28 15c-7.18 0-13 5.82-13 13s5.82 13 13 13s13-5.82 13-13s-5.82-13-13-13m0 4a9 9 0 1 1 0 18a9 9 0 0 1 0-18m14.5-9a3.5 3.5 0 1 0 0 7a3.5 3.5 0 0 0 0-7"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
